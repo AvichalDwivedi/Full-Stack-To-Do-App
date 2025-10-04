@@ -5,7 +5,8 @@ const path = require('path');
 const express = require('express');
 const { default: mongoose } = require('mongoose');
 const cors = require('cors');
-const DB_PATH = "mongodb+srv://admin:avichal1234@cluster0.bqgpz0p.mongodb.net/todo?retryWrites=true&w=majority&appName=Cluster0"
+require('dotenv').config(); // Add this line
+// const DB_PATH = "mongodb+srv://admin:avichal1234@cluster0.bqgpz0p.mongodb.net/todo?retryWrites=true&w=majority&appName=Cluster0"
 //Local Module
 const todoItemsRouter = require("./routes/todoItemsRouter")
 const errorsController = require("./controllers/errors");
