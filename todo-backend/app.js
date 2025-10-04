@@ -5,7 +5,7 @@ const path = require('path');
 const express = require('express');
 const { default: mongoose } = require('mongoose');
 const cors = require('cors');
-require('dotenv').config(); // Add this line
+// MongoDB URL
 const todoItemsRouter = require("./routes/todoItemsRouter")
 const errorsController = require("./controllers/errors");
 
